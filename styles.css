@@ -1,0 +1,187 @@
+/* css reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header-img {
+  background: center / contain no-repeat url(./images/aji.png);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.navigation {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin: 16px 0;
+  color: blue;
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.window {
+  width: 500px;
+  overflow: hidden;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  width: 850px;
+  position: relative;
+  left: 1;
+}
+
+.project {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #000;
+  margin: 0 8px;
+}
+
+.project1 {
+  background: center / contain no-repeat url(./images/project1.png);
+}
+
+.project2 {
+  background: center / contain no-repeat url(./images/project2.png);
+}
+
+.project3 {
+  background: center / contain no-repeat url(./images/project3.png);
+}
+
+.project4 {
+  background: center / contain no-repeat url(./images/project4.png);
+}
+
+.project5 {
+  background: center / contain no-repeat url(./images/project5.png);
+}
+
+.arrow {
+  height: 75px;
+  width: 75px;
+}
+
+.arrow-left {
+  background: center / contain no-repeat url(./images/arrow-left.png);
+}
+
+.arrow-right {
+  background: center / contain no-repeat url(./images/right-arrow.png);
+}
+
+.form-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+.send-button {
+  height: 50px;
+  width: 100px;
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: grey;
+  color: white; 
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(000, 000, 000, 0.2);
+  position: absolute;
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 25%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: grey;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  display: flex;
+}
