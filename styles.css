@@ -136,6 +136,11 @@ input {
   outline: none;
 }
 
+.form-label {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
 .send-button {
   height: 50px;
   width: 100px;
@@ -145,6 +150,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 24px;
 }
 
 .notification {

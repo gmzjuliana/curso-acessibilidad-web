@@ -33,7 +33,7 @@
       </p>
 
       <div class="carousel">
-        <div class="arrow arrow-left"></div>
+        <div class="arrow arrow-left" aria-label="backward-button"></div>
         <div class="window">
           <div class="project-container">
             <img
@@ -63,15 +63,15 @@
             />
           </div>
         </div>
-        <div class="arrow arrow-right"></div>
+        <div class="arrow arrow-right" aria-label="forward-button"></div>
       </div>
     </main>
 
     <h2 class="header">Contacto</h2>
     <form class="form-container">
-      Nombre<input type="text" /> <br />
-      Correo<input type="text" /> <br />
-      Mensaje<input type="text" /> <br />
+      <p class="form-label">Nombre:</p><input type="text"  aria-label="Nombre"/> 
+      <p class="form-label">Correo:</p><input type="text" aria-label="Correo" /> 
+      <p class="form-label">Mensaje:</p><textarea aria-label="Mensaje"></textarea> 
     </form>
     <button class="send-button">Enviar</button>
 
