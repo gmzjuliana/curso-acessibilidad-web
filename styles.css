@@ -35,6 +35,16 @@ img {
   height: auto;
 }
 
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active,
+.skip-link:hover {
+  height: auto;
+}
+
 body, header, main {
   display: flex;
   flex-direction: column;
