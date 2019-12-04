@@ -35,33 +35,48 @@
       <div class="carousel">
         <div class="arrow arrow-left"></div>
         <div class="window">
-          <div class="project-container">
-            <img
-              src="./images/project1.png"
-              alt="primer proyecto"
-              class="project project1"
-            />
-            <img
-              src="./images/project2.png"
-              alt="segundo proyecto"
-              class="project project2"
-            />
-            <img
-              src="./images/project3.png"
-              alt="tercero proyecto"
-              class="project project3"
-            />
-            <img
-              src="./images/project4.png"
-              alt="cuarto proyecto"
-              class="project project4"
-            />
-            <img
-              src="./images/project5.png"
-              alt="quinto proyecto"
-              class="project project5"
-            />
-          </div>
+          <ul class="project-container">
+            <li>
+              <img
+                src="./images/project1.png"
+                alt="primer proyecto, click to see more details"
+                class="project project1"
+                tabindex="0"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/project2.png"
+                alt="segundo proyecto"
+                class="project project2"
+                tabindex="0"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/project3.png"
+                alt="tercero proyecto"
+                class="project project3"
+                tabindex="0"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/project4.png"
+                alt="cuarto proyecto"
+                class="project project4"
+                aria-hidden="true"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/project5.png"
+                alt="quinto proyecto"
+                class="project project5"
+                aria-hidden="true"
+              />
+            </li>
+          </ul>
         </div>
         <div class="arrow arrow-right"></div>
       </div>
@@ -69,9 +84,19 @@
 
     <h2 class="header">Contacto</h2>
     <form class="form-container">
+<<<<<<< Updated upstream
       Nombre<input type="text" /> <br />
       Correo<input type="text" /> <br />
       Mensaje<input type="text" /> <br />
+=======
+      <p class="form-label">Nombre:</p>
+      <input type="text" aria-label="Nombre" id="name" />
+      <span id="name-error"></span>
+      <p class="form-label">Correo:</p>
+      <input type="text" aria-label="Correo" />
+      <p class="form-label">Mensaje:</p>
+      <textarea aria-label="Mensaje"></textarea>
+>>>>>>> Stashed changes
     </form>
     <button class="send-button">Enviar</button>
 
