@@ -45,7 +45,9 @@ img {
   height: auto;
 }
 
-body, header, main {
+body,
+header,
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +78,14 @@ nav {
   margin: 16px auto;
   color: blue;
   cursor: pointer;
+}
+
+.navigation a:hover {
+  color: red;
+}
+
+.navigation a:focus {
+  outline: dashed red;
 }
 
 main {
@@ -177,7 +187,7 @@ input {
   border: 2px solid #000;
   border-radius: 5px;
   background-color: grey;
-  color: white; 
+  color: white;
   display: none;
   align-items: center;
   justify-content: center;
@@ -201,12 +211,8 @@ input {
   border: 2px solid #000;
   border-radius: 5px;
   background-color: grey;
-  color: white; 
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.show {
-  display: flex;
 }
