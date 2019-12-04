@@ -77,6 +77,14 @@ nav {
   cursor: pointer;
 }
 
+.navigation a:hover {
+  color: red;
+}
+
+.navigation a:focus {
+  outline: dashed red;
+}
+
 .carousel {
   display: flex;
   align-items: center;
@@ -200,8 +208,4 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.show {
-  display: flex;
 }
