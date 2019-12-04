@@ -67,6 +67,10 @@ nav {
   cursor: pointer;
 }
 
+main {
+  margin-top: 24px;
+}
+
 .carousel {
   display: flex;
   align-items: center;
