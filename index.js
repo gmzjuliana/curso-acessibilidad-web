@@ -5,9 +5,9 @@ window.onload = () => {
     .querySelector(".send-button")
     .addEventListener("click", showNotification);
   document.querySelectorAll(".project").forEach(element => {
-    element.addEventListener("click", (e) => openModal(e));
+    element.addEventListener("click", e => openModal(e));
   });
-  document.body.addEventListener('click', (e) => closeModal(e))
+  document.body.addEventListener("click", e => closeModal(e));
 };
 
 function clickRight() {
@@ -20,6 +20,22 @@ function clickRight() {
   }
   let newValue = currentLeft - 166;
   document.querySelector(".project-container").style.left = `${newValue}px`;
+  switch (newValue) {
+    case -166:
+      document.querySelector(".project1").removeAttribute("tabindex");
+      document.querySelector(".project1").setAttribute("aria-hidden", true);
+      document.querySelector(".project4").removeAttribute("aria-hidden");
+      document.querySelector(".project4").setAttribute("tabindex", "0");
+      break;
+    case -332:
+      document.querySelector(".project2").removeAttribute("tabindex");
+      document.querySelector(".project2").setAttribute("aria-hidden", true);
+      document.querySelector(".project5").removeAttribute("aria-hidden");
+      document.querySelector(".project5").setAttribute("tabindex", "0");
+      break;
+    default:
+      break;
+  }
 }
 
 function clickLeft() {
@@ -32,6 +48,22 @@ function clickLeft() {
   }
   let newValue = currentLeft + 166;
   document.querySelector(".project-container").style.left = `${newValue}px`;
+  switch (newValue) {
+    case -166:
+      document.querySelector(".project5").removeAttribute("tabindex");
+      document.querySelector(".project5").setAttribute("aria-hidden", true);
+      document.querySelector(".project2").removeAttribute("aria-hidden");
+      document.querySelector(".project2").setAttribute("tabindex", "0");
+      break;
+    case 0:
+      document.querySelector(".project4").removeAttribute("tabindex");
+      document.querySelector(".project4").setAttribute("aria-hidden", true);
+      document.querySelector(".project1").removeAttribute("aria-hidden");
+      document.querySelector(".project1").setAttribute("tabindex", "0");
+      break;
+    default:
+      break;
+  }
 }
 
 function showNotification() {
@@ -42,14 +74,16 @@ function showNotification() {
 }
 
 function openModal(e) {
-    document
-    .querySelector(".modal-container").style.display = "flex";
+  document.querySelector(".modal-container").style.display = "flex";
 }
 
 function closeModal(e) {
-    if (e.target.className.includes("project") || e.target.className === "modal") {
-        return
-    } else {
-        document.querySelector(".modal-container").style.display = "none";
-    }
+  if (
+    e.target.className.includes("project") ||
+    e.target.className === "modal"
+  ) {
+    return;
+  } else {
+    document.querySelector(".modal-container").style.display = "none";
+  }
 }
