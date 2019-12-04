@@ -6,8 +6,13 @@ window.onload = () => {
     .addEventListener("click", showNotification);
   document.querySelectorAll(".project").forEach(element => {
     element.addEventListener("click", e => openModal(e));
+    element.addEventListener("keyup", e => openModal(e, true));
   });
   document.body.addEventListener("click", e => closeModal(e));
+  document.body.addEventListener("keyup", e => listenForEsc(e));
+  document
+    .querySelector(".close-modal")
+    .addEventListener("click", e => closeModal(e));
 };
 
 function clickRight() {
@@ -73,8 +78,18 @@ function showNotification() {
   }, 3000);
 }
 
-function openModal(e) {
+function openModal(e, isKeyUp) {
+  if (isKeyUp && e.keyCode !== 13) {
+    return;
+  }
   document.querySelector(".modal-container").style.display = "flex";
+  document.querySelector(".modal-header").focus();
+}
+
+function listenForEsc(e) {
+  if (e.keyCode === 27) {
+    closeModal(e)
+  }
 }
 
 function closeModal(e) {
@@ -83,7 +98,8 @@ function closeModal(e) {
     e.target.className === "modal"
   ) {
     return;
-  } else {
+  }
+  else {
     document.querySelector(".modal-container").style.display = "none";
   }
 }
