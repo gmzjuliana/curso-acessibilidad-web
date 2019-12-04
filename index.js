@@ -3,7 +3,7 @@ window.onload = () => {
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
   document
     .querySelector(".send-button")
-    .addEventListener("click", showNotification);
+    .addEventListener("click", validateForm);
   document.querySelectorAll(".project").forEach(element => {
     element.addEventListener("click", e => openModal(e));
     element.addEventListener("keyup", e => openModal(e, true));
@@ -71,7 +71,18 @@ function clickLeft() {
   }
 }
 
+function validateForm() {
+  const nameField = document.getElementById("name");
+  if (nameField.value === "") {
+    document.getElementById("name-error").innerHTML = "! Para enviar el form, se necesita un nombre";
+  } else {
+    showNotification();
+  }
+}
+
 function showNotification() {
+  document.getElementById("name-error").innerHTML = "";
+  document.querySelector(".form-container").reset();
   document.querySelector(".notification").style.display = "flex";
   setTimeout(function() {
     document.querySelector(".notification").style.display = "none";
@@ -88,7 +99,7 @@ function openModal(e, isKeyUp) {
 
 function listenForEsc(e) {
   if (e.keyCode === 27) {
-    closeModal(e)
+    closeModal(e);
   }
 }
 
@@ -98,8 +109,7 @@ function closeModal(e) {
     e.target.className === "modal"
   ) {
     return;
-  }
-  else {
+  } else {
     document.querySelector(".modal-container").style.display = "none";
   }
 }
