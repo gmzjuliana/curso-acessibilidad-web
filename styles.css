@@ -44,6 +44,7 @@ body, header, main {
 
 .header {
   margin-top: 24px;
+  margin-bottom: 24px;
   font-size: 32px;
   font-weight: bold;
 }
