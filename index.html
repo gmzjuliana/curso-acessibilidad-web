@@ -39,7 +39,7 @@
           <div class="project-container">
             <img
               src="./images/project1.png"
-              alt="primer proyecto"
+              alt="primer proyecto, click to see more details"
               class="project project1"
               tabindex="0"
             />
@@ -75,14 +75,22 @@
 
     <h2 class="header">Contacto</h2>
     <form class="form-container">
-      <p class="form-label">Nombre:</p><input type="text"  aria-label="Nombre"/> 
-      <p class="form-label">Correo:</p><input type="text" aria-label="Correo" /> 
-      <p class="form-label">Mensaje:</p><textarea aria-label="Mensaje"></textarea> 
+      <p class="form-label">Nombre:</p>
+      <input type="text" aria-label="Nombre" />
+      <p class="form-label">Correo:</p>
+      <input type="text" aria-label="Correo" />
+      <p class="form-label">Mensaje:</p>
+      <textarea aria-label="Mensaje"></textarea>
     </form>
     <button class="send-button">Enviar</button>
 
     <div class="notification">Esto es una notificacion</div>
-    <div class="modal-container"><div class="modal">Esto es un modal</div></div>
+    <div class="modal-container">
+      <div class="modal">
+        <h1 class="modal-header" tabindex="0">Esto es un modal</h1>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
 
     <script src="index.js" type="text/javascript"></script>
   </body>
