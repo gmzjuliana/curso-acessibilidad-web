@@ -149,7 +149,7 @@ input {
 .send-button {
   height: 50px;
   width: 100px;
-  background-color: grey;
+  background-color: #2f2f2f;
   color: white;
   border-radius: 5px;
   display: flex;
