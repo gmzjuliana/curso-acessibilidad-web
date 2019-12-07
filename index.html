@@ -6,24 +6,39 @@
     <title>Mi Portafolio</title>
     <link href="styles.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="header-img"></div>
     <div class="header">Juliana Gomez</div>
-    <div>Front End Developer</div>
+    <div class="subtitle">Front End Developer</div>
     <div class="navigation">
-      <div>Sobre mi</div>
-      <div>Mis Proyectos</div>
-      <div>Contacto</div>
+      <div class="nav-item">Sobre mi</div>
+      <div class="nav-item">Mis Proyectos</div>
+      <div class="nav-item">Contacto</div>
     </div>
 
-    Hola! Soy Juliana 👋 Soy Colombo-Canadiense, amo los gatos y tambien crear
-    cosas lindas para la web 😍 Aqui puedes ver algunos de mis proyectos
-    recientes y tambien puedes contactarme por si quieres hablar de tecnologia,
-    acessibilidad o gatos!
+    <div class="intro">
+      Hola! Soy Juliana 👋 Soy Colombo-Canadiense, amo los gatos y tambien crear
+      cosas lindas para la web 😍 Aqui puedes ver algunos de mis proyectos
+      recientes y tambien puedes contactarme por si quieres hablar de
+      tecnologia, acessibilidad o gatos!
+      <div class="social-media">
+          <div>
+            <a href="https://twitter.com/gmzjuliana" target="_blank"><img src="images/twitter.png"></a>
+          </div>
+          <div>
+            <a href="https://github.com/gmzjuliana" target="_blank"><img src="images/github-logo.png"></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
+              ><img src="images/linkedin.png"></a
+            >
+          </div>
+        </div>
+    </div>
 
     <div class="carousel">
       <div class="arrow arrow-left"></div>
@@ -39,16 +54,18 @@
       <div class="arrow arrow-right"></div>
     </div>
 
-    <div class="header">Contacto</div>
-    <div class="form-container">
-      Nombre<input type="text" /> <br />
-      Correo<input type="text" /> <br />
-      Mensaje<input type="text" /> <br />
+    <div class="contact-section">
+      <div class="header">Contacto</div>
+      <div class="form-container">
+        Nombre<input type="text" /> <br />
+        Correo<input type="text" /> <br />
+        <div class="message-input">Mensaje<input type="text" /> <br /></div>
+      <div class="send-button">Enviar</div>
     </div>
-    <div class="send-button">Enviar</div>
-
-    <div class="notification">Esto es una notificacion</div>
-    <div class="modal-container"><div class="modal">Esto es un modal</div></div>
+      
+    </div>
+    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="modal-container"><div class="modal">Ejemplo de un proyecto mio<div class="modal-project-image"></div></div>
 
     <script src="index.js" type="text/javascript"></script>
   </body>
