@@ -47,11 +47,12 @@ img {
   --verde: #7ac943;
 }
 
-body {
+body, header, section {
   align-items: center;
   background-color: var(--gris-medio);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -68,7 +69,6 @@ body {
 }
 
 .header-img {
-  background: center / contain no-repeat url(./images/aji.png);
   border-radius: 50%;
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
@@ -77,12 +77,14 @@ body {
   width: 300px;
 }
 
+nav {
+  width: 100%;
+}
+
 .navigation {
-  color: var(--blanco);
-  cursor: pointer;
   display: flex;
   justify-content: space-around;
-  margin: 24px 0;
+  margin: 24px auto;
   width: 50%;
 }
 
@@ -96,12 +98,17 @@ body {
   width: 33%;
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
 .nav-item:hover {
   background-color: var(--verde);
 }
 
 .intro {
-  margin: 0 196px;
+  margin: 24px 196px 0;
   font-family: var(--secondary-font);
 }
 
@@ -130,6 +137,16 @@ body {
   width: 1500px;
 }
 
+.project-container li {
+  display: inline-block;
+}
+
+.project-container button {
+  background: none;
+  border: none;
+
+}
+
 .project {
   border-radius: 5px;
   border: 2px solid #000;
@@ -138,31 +155,12 @@ body {
   margin: 0 8px;
   transition: all 0.2s ease-in-out;
   width: 250px;
+  object-fit: cover;
 }
 
 .project:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.project1 {
-  background: center / cover no-repeat url(./images/project1.png);
-}
-
-.project2 {
-  background: center / cover no-repeat url(./images/project2.png);
-}
-
-.project3 {
-  background: center / cover no-repeat url(./images/project3.png);
-}
-
-.project4 {
-  background: center / cover no-repeat url(./images/project4.png);
-}
-
-.project5 {
-  background: center / cover no-repeat url(./images/project5.png);
 }
 
 .arrow {

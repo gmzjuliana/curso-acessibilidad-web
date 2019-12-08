@@ -3,7 +3,7 @@ window.onload = () => {
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
   document
     .querySelector(".send-button")
-    .addEventListener("click", showNotification);
+    .addEventListener("click", (e) => showNotification(e));
   document.querySelectorAll(".project").forEach(element => {
     element.addEventListener("click", e => openModal(e));
   });
@@ -37,7 +37,8 @@ function clickLeft() {
 }
 
 /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
-function showNotification() {
+function showNotification(e) {
+  e.preventDefault();
   document.querySelector(".notification").style.display = "flex";
   setTimeout(function() {
     document.querySelector(".notification").style.display = "none";

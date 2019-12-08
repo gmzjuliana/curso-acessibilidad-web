@@ -12,69 +12,122 @@
   </head>
 
   <body>
-    <div class="header-img"></div>
-    <div class="header">Juliana Gomez</div>
-    <div class="subtitle">Front End Developer</div>
-    <div class="navigation">
-      <div class="nav-item">Sobre mi</div>
-      <div class="nav-item">Mis Proyectos</div>
-      <div class="nav-item">Contacto</div>
-    </div>
+    <header>
+      <img src="images/aji.png" alt="Juliana Gomez" class="header-img" />
+      <h1 class="header">Juliana Gomez</h1>
+      <h2 class="subtitle">Front End Developer</h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="/about/">Sobre mi</a></li>
+          <li class="nav-item"><a href="/projects/">Mis Proyectos</a></li>
+          <li class="nav-item"><a href="/contact/">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="intro">
-      Hola! Soy Juliana 👋 Soy Colombo-Canadiense, amo los gatos y tambien crear
-      cosas lindas para la web 😍 Aqui puedes ver algunos de mis proyectos
-      recientes y tambien puedes contactarme por si quieres hablar de
-      tecnologia, acessibilidad o gatos!
-      <div class="social-media">
-        <div>
-          <a href="https://twitter.com/gmzjuliana" target="_blank"
-            ><img src="images/twitter.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://github.com/gmzjuliana" target="_blank"
-            ><img src="images/github-logo.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
-            ><img src="images/linkedin.png"
-          /></a>
-        </div>
-      </div>
-    </div>
+    <main>
+      <section>
+        <h2 class="header">Sobre Mi</h2>
+        <p class="intro">
+          Hola! Soy Juliana 👋 Soy Colombo-Canadiense, amo los gatos y tambien
+          crear cosas lindas para la web 😍 Aqui puedes ver algunos de mis
+          proyectos recientes y tambien puedes contactarme por si quieres hablar
+          de tecnologia, acessibilidad o gatos!
+        </p>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/gmzjuliana" target="_blank">
+              <img src="images/twitter.png" alt="Twitter"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/gmzjuliana" target="_blank">
+              <img src="images/github-logo.png" alt="GitHub"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <div class="carousel">
-      <div class="arrow arrow-left"></div>
-      <div class="window">
-        <div class="project-container">
-          <div class="project project1"></div>
-          <div class="project project2"></div>
-          <div class="project project3"></div>
-          <div class="project project4"></div>
-          <div class="project project5"></div>
+      <section>
+        <h2 class="header">Mis Proyectos</h2>
+        <div class="carousel">
+          <div class="arrow arrow-left"></div>
+          <div class="window">
+            <ul class="project-container">
+              <li>
+                <button>
+                  <img
+                    src="./images/project1.png"
+                    alt="primer proyecto"
+                    class="project project1"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project2.png"
+                    alt="segundo proyecto"
+                    class="project project2"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project3.png"
+                    alt="tercer proyecto"
+                    class="project project3"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project4.png"
+                    alt="cuarto proyecto"
+                    class="project project4"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project5.png"
+                    alt="quinto proyecto"
+                    class="project project5"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="arrow arrow-right"></div>
         </div>
-      </div>
-      <div class="arrow arrow-right"></div>
-    </div>
+      </section>
+    </main>
 
-    <div class="contact-section">
+    <footer class="contact-section">
       <div class="header">Contacto</div>
-      <div class="form-container">
+      <form class="form-container">
         Nombre<input type="text" /> <br />
         Correo<input type="text" /> <br />
         <div class="message-input">Mensaje<input type="text" /> <br /></div>
-        <div class="send-button">Enviar</div>
+        <button class="send-button">Enviar</button>
+      </form>
+
+      <div class="notification">El formulario fue enviado sin errores</div>
+      <div class="modal-container">
+        <div class="modal">
+          Ejemplo de un proyecto mio
+          <div class="modal-project-image"></div>
+        </div>
       </div>
-    </div>
-    <div class="notification">El formulario fue enviado sin errores</div>
-    <div class="modal-container">
-      <div class="modal">
-        Ejemplo de un proyecto mio
-        <div class="modal-project-image"></div>
-      </div>
-    </div>
+    </footer>
 
     <script src="index.js" type="text/javascript"></script>
   </body>
