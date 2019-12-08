@@ -105,13 +105,17 @@ nav {
   color: var(--blanco);
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:hover a {
   background-color: var(--verde);
+  color: var(--gris-oscuro);
+  cursor: pointer;
 }
 
 .intro {
-  margin: 24px 196px 0;
+  color: var(--blanco);
   font-family: var(--secondary-font);
+  margin: 24px 196px 0;
 }
 
 .social-media {
@@ -119,7 +123,19 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 32px auto 0;
-  width: 20%;
+}
+
+.social-media li a {
+  align-items: center;
+  color: var(--blanco);
+  display: flex;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.social-link-text {
+  padding-left: 8px;
+  padding-right: 16px;
 }
 
 .carousel {
@@ -215,20 +231,22 @@ input {
   font-size: 16px;
   margin: 8px 0;
   font-family: var(--secondary-font);
+  color: var(--verde);
 }
 
 .send-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
-  font-family: var(--secondary-font);
+  color: var(--gris-oscuro);
   display: flex;
+  font-family: var(--secondary-font);
+  font-size: 16px;
   height: 50px;
   justify-content: center;
   margin-bottom: 48px;
-  width: 150px;
   margin-left: auto;
+  width: 150px;
 }
 
 .notification {
@@ -236,7 +254,7 @@ input {
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
@@ -262,8 +280,10 @@ input {
   background-color: var(--gris-oscuro);
   border-radius: 5px;
   border: 2px solid #000;
+  color: var(--blanco);
   display: flex;
   flex-direction: column;
+  font-family: var(--secondary-font);
   height: 700px;
   justify-content: center;
   position: fixed;
