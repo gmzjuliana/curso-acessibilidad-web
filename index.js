@@ -3,7 +3,7 @@ window.onload = () => {
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
   document
     .querySelector(".send-button")
-    .addEventListener("click", (e) => showNotification(e));
+    .addEventListener("click", e => showNotification(e));
   document.querySelectorAll(".project").forEach(element => {
     element.addEventListener("click", e => openModal(e));
   });
@@ -16,11 +16,37 @@ function clickRight() {
     getComputedStyle(document.querySelector(".project-container")).left,
     10
   );
-  if (currentLeft < -270) { //si el valor de izquierda es menor a -270, para de mover el contenido
+  if (currentLeft < -270) {
+    //si el valor de izquierda es menor a -270, para de mover el contenido
     return;
   }
   let newValue = currentLeft - 270; //270 toma en cuenta el tamaño de la imagen mas sus margines
   document.querySelector(".project-container").style.left = `${newValue}px`;
+  // esto maneja el foco de las imagenes dentro del carousel
+  switch (newValue) {
+    case -270:
+      document.querySelector(".project1").setAttribute("tabindex", "-1");
+      document
+        .querySelector(".project1-container")
+        .setAttribute("aria-hidden", true);
+      document
+        .querySelector(".project4-container")
+        .removeAttribute("aria-hidden");
+      document.querySelector(".project4").removeAttribute("tabindex");
+      break;
+    case -540:
+      document.querySelector(".project2").setAttribute("tabindex", "-1");
+      document
+        .querySelector(".project2-container")
+        .setAttribute("aria-hidden", true);
+      document
+        .querySelector(".project5-container")
+        .removeAttribute("aria-hidden");
+      document.querySelector(".project5").removeAttribute("tabindex");
+      break;
+    default:
+      break;
+  }
 }
 
 /** Esta funcion se llama cuando la persona hace click en la fecha izquierda del carousel para navegar a la izquierda */
@@ -29,11 +55,37 @@ function clickLeft() {
     getComputedStyle(document.querySelector(".project-container")).left,
     10
   );
-  if (currentLeft === 0) { //si el valor de izquiera es 0, retornar para no seguir movierno el contenido
+  if (currentLeft === 0) {
+    //si el valor de izquiera es 0, retornar para no seguir movierno el contenido
     return;
   }
   let newValue = currentLeft + 270;
   document.querySelector(".project-container").style.left = `${newValue}px`;
+  // esto maneja el foco de las imagenes dentro del carousel
+  switch (newValue) {
+    case -270:
+      document.querySelector(".project5").setAttribute("tabindex", "-1");
+      document
+        .querySelector(".project5-container")
+        .setAttribute("aria-hidden", true);
+      document
+        .querySelector(".project2-container")
+        .removeAttribute("aria-hidden");
+      document.querySelector(".project2").removeAttribute("tabindex");
+      break;
+    case 0:
+      document.querySelector(".project4").setAttribute("tabindex", "-1");
+      document
+        .querySelector(".project4-container")
+        .setAttribute("aria-hidden", true);
+      document
+        .querySelector(".project1-container")
+        .removeAttribute("aria-hidden");
+      document.querySelector(".project1").removeAttribute("tabindex");
+      break;
+    default:
+      break;
+  }
 }
 
 /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
