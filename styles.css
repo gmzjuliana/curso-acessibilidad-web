@@ -47,6 +47,22 @@ img {
   --verde: #7ac943;
 }
 
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  background: var(--verde);
+  border-radius: 5px;
+  color: var(--gris-oscuro);
+  font-family: var(--secondary-font);
+  height: auto;
+  margin: 16px 0 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+
 body,
 header,
 section {
@@ -75,7 +91,7 @@ section {
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
   height: 300px;
-  margin-top: 80px;
+  margin-top: 72px;
   width: 300px;
 }
 
