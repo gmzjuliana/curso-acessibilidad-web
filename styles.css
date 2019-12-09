@@ -309,6 +309,11 @@ textarea:focus {
   outline: 3px solid var(--verde);
 }
 
+#name-error {
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+}
+
 .notification {
   align-items: center;
   background-color: var(--verde);

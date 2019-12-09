@@ -129,9 +129,11 @@
 
     <footer class="contact-section">
       <div class="header">Contacto</div>
+      <p class="intro">Puedes usar el formulario que sigue para mandarme un mensaje.</p>
       <form class="form-container">
         <p class="form-label">Nombre</p>
-        <input type="text" aria-label="Nombre" /> <br />
+        <input type="text" aria-label="Nombre" id="name" />
+        <span id="name-error"></span> <br />
         <p class="form-label">Correo</p>
         <input type="text" aria-label="Correo" /> <br />
         <div class="message-input">
@@ -141,7 +143,7 @@
         <button class="send-button">Enviar</button>
       </form>
     </footer>
-    
+
     <div class="notification">El formulario fue enviado sin errores</div>
     <div class="modal-container">
       <div class="modal">
