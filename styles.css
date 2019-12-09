@@ -206,7 +206,7 @@ nav {
   outline: 3px solid var(--verde);
 }
 
-.project {
+.project-img {
   border-radius: 5px;
   border: 2px solid #000;
   display: inline-block;
@@ -217,7 +217,7 @@ nav {
   object-fit: cover;
 }
 
-.project:hover {
+.project-img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -286,11 +286,13 @@ textarea:focus {
   color: var(--verde);
 }
 
-.send-button {
+.send-button,
+.close-modal {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
   color: var(--gris-oscuro);
+  cursor: pointer;
   display: flex;
   font-family: var(--secondary-font);
   font-size: 16px;
@@ -301,7 +303,8 @@ textarea:focus {
   width: 150px;
 }
 
-.send-button:focus {
+.send-button:focus,
+.close-modal:focus {
   border: 5px solid var(--gris-oscuro);
   outline: 3px solid var(--verde);
 }
@@ -343,13 +346,18 @@ textarea:focus {
   font-family: var(--secondary-font);
   height: 700px;
   justify-content: center;
+  padding: 56px;
   position: fixed;
   top: 15%;
   width: 700px;
 }
 
+.modal-header:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
+}
+
 .modal-project-image {
-  background: center / cover no-repeat url(./images/project1.png);
   border-radius: 5px;
   border: 2px solid #000;
   height: 400px;

@@ -74,47 +74,47 @@
           <div class="window">
             <ul class="project-container">
               <li class="project1-container">
-                <button class="project1">
+                <button class="project project1">
                   <img
                     src="./images/project1.png"
                     alt="primer proyecto"
-                    class="project"
+                    class="project-img"
                   />
                 </button>
               </li>
               <li class="project2-container">
-                <button class="project2">
+                <button class="project project2">
                   <img
                     src="./images/project2.png"
                     alt="segundo proyecto"
-                    class="project"
+                    class="project-img"
                   />
                 </button>
               </li>
               <li class="project3-container">
-                <button class="project3">
+                <button class="project project3">
                   <img
                     src="./images/project3.png"
                     alt="tercer proyecto"
-                    class="project"
+                    class="project-img"
                   />
                 </button>
               </li>
               <li aria-hidden="true" class="project4-container">
-                <button tabindex="-1" class="project4">
+                <button tabindex="-1" class="project project4">
                   <img
                     src="./images/project4.png"
                     alt="cuarto proyecto"
-                    class="project"
+                    class="project-img"
                   />
                 </button>
               </li>
               <li aria-hidden="true" class="project5-container">
-                <button tabindex="-1" class="project5">
+                <button tabindex="-1" class="project project5">
                   <img
                     src="./images/project5.png"
                     alt="quinto proyecto"
-                    class="project"
+                    class="project-img"
                   />
                 </button>
               </li>
@@ -140,15 +140,20 @@
         </div>
         <button class="send-button">Enviar</button>
       </form>
-
-      <div class="notification">El formulario fue enviado sin errores</div>
-      <div class="modal-container">
-        <div class="modal">
-          Ejemplo de un proyecto mio
-          <div class="modal-project-image"></div>
-        </div>
-      </div>
     </footer>
+    
+    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="modal-container">
+      <div class="modal">
+        <h1 class="modal-header" tabindex="0">Esto es un modal</h1>
+        <img
+          src="./images/project1.png"
+          class="modal-project-image"
+          alt="un pantallazo de mi ultimo proyecto"
+        />
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
 
     <script src="index.js" type="text/javascript"></script>
   </body>
