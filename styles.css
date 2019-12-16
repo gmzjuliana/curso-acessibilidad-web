@@ -69,7 +69,6 @@ body {
 
 .header-img {
   background: center / contain no-repeat url(./images/juliana.jpeg);
-  background-size: 440px;
   border-radius: 50%;
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
