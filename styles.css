@@ -69,6 +69,8 @@ body, header, section {
   margin: 16px 0 8px;
   padding: 8px;
   text-decoration: none;
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .header {
@@ -148,7 +150,6 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 32px auto 0;
-  width: 20%;
 }
 
 .social-media li a {
@@ -257,6 +258,12 @@ nav {
   width: 30%;
 }
 
+.form-label,
+.message-input {
+  color: var(--verde);
+  font-family: var(--secondary-font);
+}
+
 .message-input input {
   height: 150px;
   margin-bottom: 16px;
@@ -275,7 +282,7 @@ input:focus {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
+  color: var(--gris-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
