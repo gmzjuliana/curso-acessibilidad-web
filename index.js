@@ -86,6 +86,7 @@ function showNotification() {
   document.getElementById("name-error").innerHTML = "";
   document.querySelector(".form-container").reset();
   document.querySelector(".notification").style.display = "flex";
+  document.querySelector(".notification").innerHTML = "El formulario fue enviado sin errores"
   setTimeout(function() {
     document.querySelector(".notification").style.display = "none";
   }, 3000);

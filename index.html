@@ -84,14 +84,14 @@
       <p class="intro">Puedes usar el formulario que sigue para mandarme un mensaje.</p>
       <form class="form-container">
         <p class="form-label">Nombre</p><input type="text" aria-label="nombre" id="name"/>
-        <span id="name-error"></span> <br />
+        <span id="name-error" aria-live="assertive"></span> <br />
         <p class="form-label">Correo</p><input type="text" aria-label="correo"/> <br />
         <div class="message-input">Mensaje<input type="text" /> <br /></div>
         <button class="send-button">Enviar</button>
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive"></div>
     <div class="modal-container">
       <div class="modal">
         <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
