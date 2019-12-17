@@ -105,13 +105,17 @@ nav {
   width: 33%;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:hover a {
   background-color: var(--verde);
+  color: var(--gris-oscuro);
+  cursor: pointer;
 }
 
 .intro {
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
+  color: var(--blanco);
 }
 
 .social-media {
