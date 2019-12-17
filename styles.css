@@ -126,6 +126,19 @@ nav {
   width: 20%;
 }
 
+.social-media li a {
+  align-items: center;
+  display: flex;
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.social-link-text {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 .carousel {
   align-items: center;
   display: flex;
