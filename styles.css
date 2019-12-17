@@ -206,7 +206,7 @@ nav {
   outline: 3px solid var(--verde);
 }
 
-.project {
+.project-img {
   border-radius: 5px;
   border: 2px solid #000;
   display: inline-block;
@@ -282,7 +282,8 @@ input:focus {
   padding: 8px;
 }
 
-.send-button {
+.send-button,
+.modal-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
@@ -295,6 +296,7 @@ input:focus {
   width: 150px;
   margin-left: auto;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .notification {
@@ -335,6 +337,7 @@ input:focus {
   position: fixed;
   top: 15%;
   width: 700px;
+  padding: 56px;
 }
 
 .modal-project-image {
