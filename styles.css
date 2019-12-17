@@ -309,12 +309,17 @@ input:focus {
   outline: 3px solid var(--verde);
 }
 
+#name-error {
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+}
+
 .notification {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
