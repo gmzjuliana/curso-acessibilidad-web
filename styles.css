@@ -232,6 +232,10 @@ nav {
   transform: scale(1.1);
 }
 
+.arrow:focus {
+  outline: 3px solid var(--verde);
+}
+
 .arrow-left {
   background: center / contain no-repeat url(./images/play-button-left.png);
   background-color: var(--verde);
