@@ -47,11 +47,12 @@ img {
   --verde: #7ac943;
 }
 
-body {
+body, header, section {
   align-items: center;
   background-color: var(--gris-medio);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -68,7 +69,6 @@ body {
 }
 
 .header-img {
-  background: center / contain no-repeat url(./images/juliana.jpeg);
   border-radius: 50%;
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
@@ -77,13 +77,22 @@ body {
   width: 300px;
 }
 
+nav {
+  width: 100%;
+}
+
 .navigation {
   color: var(--blanco);
   cursor: pointer;
   display: flex;
   justify-content: space-around;
-  margin: 24px 0;
+  margin: 24px auto;
   width: 50%;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--blanco);
 }
 
 .nav-item {
