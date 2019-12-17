@@ -80,6 +80,10 @@ body, header, section {
   margin-top: 16px;
 }
 
+#modal-header {
+  outline: 3px solid var(--verde);
+}
+
 .subtitle {
   color: var(--verde);
   font-family: var(--secondary-font);
@@ -297,6 +301,12 @@ input:focus {
   margin-left: auto;
   font-size: 16px;
   cursor: pointer;
+}
+
+.send-button:focus,
+.modal-button:focus {
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .notification {
